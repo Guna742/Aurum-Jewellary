@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="The AURUM Heirloom Tiara — a breathtaking assembly of diamonds and pearls in 18K white gold, designed for the most regal bridal moments.">
+    <title>Heirloom Diamond Tiara — AURUM JEWELLERY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+
+<body class="theme-page-vera">
+    <!-- PRELOADER ... same ... -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="collections.html">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
+                    <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
+                    <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
+                    <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
+                    <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
+                    <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fitting-room.html" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="fadeInUp stagger-1" style="margin-bottom:32px;font-size:0.85rem;color:var(--gray-200);">
+                <a href="index.html" style="color:var(--gray-200);">Home</a> <span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:middle;">chevron_right</span>
+                <a href="collections.html" style="color:var(--gray-200);">Bridal Jewellery</a> <span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:middle;">chevron_right</span>
+                Heirloom Tiara
+            </div>
+            <div class="product-detail-grid">
+                <div class="product-gallery tilt-card">
+                    <img src="assets/bridal-tiara-premium.png" alt="Heirloom Diamond Tiara" class="main-image active" id="mainProdImage">
+                </div>
+                <div class="product-details-info">
+                    <span class="product-brand-label fadeInUp stagger-2">Royal Aurum</span>
+                    <h1 class="fadeInUp stagger-3">Heirloom Diamond Tiara</h1>
+                    <div class="product-rating-bar">
+                        <span class="stars">★★★★★</span>
+                        <span>5.0 (29 reviews)</span>
+                    </div>
+
+                    <div class="product-price-section">
+                        <p class="price-label">Price</p>
+                        <p class="price">$15,800</p>
+                        <p class="retail-price">Includes Bespoke Fitting</p>
+                    </div>
+
+                    <p class="product-description">
+                        An extraordinary piece of artistry. This Heirloom Tiara is set with over 15 carats of brilliant-cut diamonds and South Sea pearls in a vintage-inspired 18K white gold frame. A royal crowning touch for your most unforgettable day.
+                    </p>
+
+                    <!-- Customization -->
+                    <div class="size-selector">
+                        <label>Base Metal Choice</label>
+                        <div class="size-options">
+                            <span class="size-option selected" data-size="18K White Gold" onclick="selectSize(this)"><span class="size-letter">WG</span><span class="size-cm">White Gold</span></span>
+                            <span class="size-option" data-size="Platinum" onclick="selectSize(this)"><span class="size-letter">PT</span><span class="size-cm">Platinum</span></span>
+                        </div>
+                    </div>
+
+                    <!-- Spacing -->
+                    <div style="margin-bottom:30px;"></div>
+
+                    <!-- Reserve Button -->
+                    <div class="reserve-actions">
+                        <button class="btn btn-primary btn-reserve" onclick="addToCart('Heirloom Diamond Tiara', 15800, 'assets/bridal-tiara.png')">
+                            Add to Cart — $15,800
+                        </button>
+                        <button class="btn-wishlist" onclick="toggleWishlist(this)"
+                            aria-label="Add to wishlist"><span class="material-symbols-outlined">favorite</span></button>
+                    </div>
+
+                    <!-- Features -->
+                    <ul class="product-features">
+                        <li><span class="feature-icon material-symbols-outlined">verified</span> 15.2 Carat Total Diamond Weight</li>
+                        <li><span class="feature-icon">✦</span> 5 AA Grade South Sea Pearls</li>
+                        <li><span class="feature-icon">✦</span> Bespoke Head-Mapping Consultation</li>
+                        <li><span class="feature-icon">✦</span> Hand-crafted in 18K White Gold</li>
+                        <li><span class="feature-icon">✦</span> Insured White-Glove Shipping</li>
+                        <li><span class="feature-icon">✦</span> Heritage Authenticity Certificate</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
+                                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
+                    <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
+                </div>
+
+                <!-- Collections -->
+                <div class="footer-col">
+                    <h4>Jewellery</h4>
+                    <ul>
+                        <li><a href="shop.html">Rings</a></li>
+                        <li><a href="shop.html">Necklaces</a></li>
+                        <li><a href="shop.html">Earrings</a></li>
+                        <li><a href="shop.html">Bracelets</a></li>
+                        <li><a href="collections.html">Bridal Jewellery</a></li>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Jewellery Care Guide</a></li>
+                        <li><a href="#">Returns & Warranty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-col">
+                    <h4>Join the Circle</h4>
+                    <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+                        <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Warranty</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

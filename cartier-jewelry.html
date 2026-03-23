@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartier Gold Statement Set — AURUM JEWELLERY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+
+<body class="theme-page-cartier">
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="collections.html">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
+                    <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
+                    <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
+                    <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
+                    <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
+                    <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fitting-room.html" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="fadeInUp stagger-1" style="margin-bottom:32px;font-size:0.85rem;color:var(--gray-200);">
+                <a href="index.html" style="color:var(--gray-200);">Home</a> <span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:middle;">chevron_right</span>
+                <a href="collections.html" style="color:var(--gray-200);">Accessories</a> <span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:middle;">chevron_right</span> Cartier
+            </div>
+            <div class="product-detail-grid">
+                <div class="product-gallery tilt-card">
+                    <img src="assets/gold-set-premium.png" alt="Cartier Heritage Gold Set" class="main-image active" id="mainProdImage">
+                </div>
+                <div class="product-details-info">
+                    <span class="product-brand-label fadeInUp stagger-2">Cartier</span>
+                    <h1 class="fadeInUp stagger-3">Gold Statement Set</h1>
+                    <div class="product-rating-bar">
+                        <span class="stars">★★★★★</span>
+                        <span>5.0 (18 reviews)</span>
+                    </div>
+
+                    <div class="product-price-section">
+                        <p class="price-label">Price</p>
+                        <p class="price">$14,500</p>
+                        <p class="retail-price">Includes Heritage Warranty</p>
+                    </div>
+
+                    <p class="product-description">
+                        Pure elegance and sophistication. This Cartier gold set includes a necklace and matching
+                        earrings crafted from 18k yellow gold. Perfect for making a statement at any high-profile event.
+                    </p>
+
+                    <!-- Size Selector -->
+                    <div class="size-selector">
+                        <label>Select Fit</label>
+                        <div class="size-options">
+                            <span class="size-option selected" data-size="One Size (Universal)"
+                                onclick="selectSize(this)"><span class="size-letter">One Size</span><span
+                                    class="size-cm">Universal Fit</span></span>
+                            <span class="size-option" data-size="S/M (Petite)" onclick="selectSize(this)"><span
+                                    class="size-letter">S/M</span><span class="size-cm">Petite / 15–16"</span></span>
+                            <span class="size-option" data-size="M/L (Standard)" onclick="selectSize(this)"><span
+                                    class="size-letter">M/L</span><span class="size-cm">Standard / 16–18"</span></span>
+                        </div>
+                    </div>
+
+                    <!-- Duration Selector -->
+                    <div class="duration-selector">
+                        <label>Select Rental Duration</label>
+                        <div class="duration-options">
+                            <div class="duration-option" onclick="selectDuration(this)">
+                                <strong>4 Days</strong>
+                                <span class="dur-price">$380</span>
+                            </div>
+                            <div class="duration-option selected" onclick="selectDuration(this)">
+                                <strong>7 Days</strong>
+                                <span class="dur-price">$520</span>
+                            </div>
+                            <div class="duration-option" onclick="selectDuration(this)">
+                                <strong>14 Days</strong>
+                                <span class="dur-price">$700</span>
+                            </div>
+                            <div class="duration-option" onclick="selectDuration(this)">
+                                <strong>30 Days</strong>
+                                <span class="dur-price">$1,050</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calendar -->
+                    <div class="availability-calendar">
+                        <label>Availability Calendar</label>
+                        <div class="calendar-widget" id="calendarWidget">
+                            <div class="calendar-header">
+                                <button onclick="changeMonth(-1, this)"><span class="material-symbols-outlined">chevron_left</span></button>
+                                <h4 id="calendarMonth">March 2026</h4>
+                                <button onclick="changeMonth(1, this)"><span class="material-symbols-outlined">chevron_right</span></button>
+                            </div>
+                            <div class="calendar-days" id="calendarDays">
+                                <!-- Generated by JS -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reserve Button -->
+                    <div class="reserve-actions">
+                        <button class="btn btn-primary btn-reserve" onclick="addToCart('Cartier Gold Set', 14500, 'assets/gold-jewelry.png')">
+                            Add to Cart — $14,500
+                        </button>
+                        <button class="btn-wishlist" onclick="toggleWishlist(this)"
+                            aria-label="Add to wishlist"><span class="material-symbols-outlined">favorite</span></button>
+                    </div>
+
+                    <!-- Features -->
+                    <ul class="product-features">
+                        <li><span class="feature-icon material-symbols-outlined">verified</span> Insured shipping &amp; tamper-proof packaging</li>
+                        <li><span class="feature-icon">✦</span> Professional cleaning &amp; inspection included</li>
+                        <li><span class="feature-icon">✦</span> Certificate of authenticity provided</li>
+                        <li><span class="feature-icon">✦</span> 24/7 concierge support</li>
+                        <li><span class="feature-icon">✦</span> Authenticity guaranteed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
+                                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
+                    <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
+                </div>
+
+                <!-- Collections -->
+                <div class="footer-col">
+                    <h4>Jewellery</h4>
+                    <ul>
+                        <li><a href="shop.html">Rings</a></li>
+                        <li><a href="shop.html">Necklaces</a></li>
+                        <li><a href="shop.html">Earrings</a></li>
+                        <li><a href="shop.html">Bracelets</a></li>
+                        <li><a href="collections.html">Bridal Jewellery</a></li>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Jewellery Care Guide</a></li>
+                        <li><a href="#">Returns & Warranty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-col">
+                    <h4>Join the Circle</h4>
+                    <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+                        <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Warranty</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

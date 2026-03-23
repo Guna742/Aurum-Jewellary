@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AURUM JEWELLERY Virtual Atelier — Experience our exquisite diamonds and fine jewellery on a 3D avatar with immersive technology.">
+    <title>AURUM Virtual Atelier — 3D Jewellery Try-On</title>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="fitting-room.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+
+<body class="theme-page-fitting">
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo"><span class="logo-main">AURUM</span><span class="logo-sub">JEWELLERY</span></div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+        <p class="preloader-tagline">Preparing Your Virtual Atelier...</p>
+    </div>
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="collections.html">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
+                    <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
+                    <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
+                    <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
+                    <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
+                    <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fitting-room.html" class="active" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle"><span class="material-symbols-outlined">menu</span></div>
+    </nav>
+
+    <!-- PAGE HERO STRIP -->
+    <div class="fr-hero-strip">
+        <span class="section-label">✦ Immersive 3D Experience</span>
+        <h1 class="fr-hero-title">Virtual <span class="highlight">Atelier</span></h1>
+        <p class="fr-hero-sub">Visualize our masterworks in real-time. Select a piece to see it shine on your bespoke avatar.</p>
+    </div>
+
+    <!-- MAIN FITTING ROOM LAYOUT -->
+    <main class="fr-main" id="frMain">
+
+        <!-- LEFT PANEL: Item Selector -->
+        <aside class="fr-selector" id="frSelector">
+            <div class="fr-tabs" role="tablist">
+                <button class="fr-tab active" data-tab="jewelry" role="tab" aria-selected="true"><span class="material-symbols-outlined">diamond</span> Fine Jewelry</button>
+                <button class="fr-tab" data-tab="dresses" role="tab" aria-selected="false"><span class="material-symbols-outlined">apparel</span> Bridal Sets</button>
+            </div>
+
+            <!-- BRIDAL SETS -->
+            <div class="fr-items-panel" id="tab-dresses">
+                <div class="fr-category-label">Royal Bridal Collections</div>
+                <div class="fr-items-grid">
+                    <div class="fr-item" data-type="dress" data-id="ivory-bridal" data-color="#F5F0E8"
+                        data-label="Heirloom Bridal Gown" data-brand="Royal Aurum" data-price="$15,800"
+                        data-emoji="⚪">
+                        <div class="fr-item-swatch" style="background:linear-gradient(135deg,#F5F0E8,#C8B99A)"></div>
+                        <div class="fr-item-info">
+                            <p class="fr-item-brand">Royal Aurum</p>
+                            <p class="fr-item-name">Heirloom Bridal</p>
+                        </div>
+                        <span class="fr-item-price">$15.8k</span>
+                    </div>
+                    <div class="fr-item" data-type="dress" data-id="crimson-gown" data-color="#8B0000"
+                        data-label="Ruby Gala Gown" data-brand="Heritage Gold" data-price="$8,500" data-emoji="🔴">
+                        <div class="fr-item-swatch" style="background:linear-gradient(135deg,#8B0000,#4B0082)"></div>
+                        <div class="fr-item-info">
+                            <p class="fr-item-brand">Heritage Gold</p>
+                            <p class="fr-item-name">Ruby Gala Gown</p>
+                        </div>
+                        <span class="fr-item-price">$8.5k</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JEWELRY -->
+            <div class="fr-items-panel active" id="tab-jewelry">
+                <div class="fr-category-label">AURUM Fine Jewelry</div>
+                <div class="fr-items-grid">
+                    <div class="fr-item" data-type="necklace" data-id="gold-necklace" data-color="#FFD700"
+                        data-label="Eternal Solitaire" data-brand="Essential Aurum" data-price="$2,450" data-emoji="✨">
+                        <div class="fr-item-swatch" style="background:linear-gradient(135deg,#FFD700,#B8860B)"></div>
+                        <div class="fr-item-info">
+                            <p class="fr-item-brand">Essential Aurum</p>
+                            <p class="fr-item-name">Eternal Solitaire</p>
+                        </div>
+                        <span class="fr-item-price">$2.4k</span>
+                    </div>
+                    <div class="fr-item" data-type="earrings" data-id="diamond-drops" data-color="#b9f2ff"
+                        data-label="Emerald Royal Drops" data-brand="Royal Aurum" data-price="$4,200"
+                        data-emoji="💠">
+                        <div class="fr-item-swatch" style="background:linear-gradient(135deg,#0d5016,#1a7a28)"></div>
+                        <div class="fr-item-info">
+                            <p class="fr-item-brand">Royal Royal</p>
+                            <p class="fr-item-name">Emerald Drops</p>
+                        </div>
+                        <span class="fr-item-price">$4.2k</span>
+                    </div>
+                    <div class="fr-item" data-type="necklace" data-id="ruby-necklace" data-color="#9B2335"
+                        data-label="Ruby Choker Set" data-brand="Heritage Gold" data-price="$5,500" data-emoji="❤️">
+                        <div class="fr-item-swatch" style="background:linear-gradient(135deg,#9B2335,#6d1826)"></div>
+                        <div class="fr-item-info">
+                            <p class="fr-item-brand">Heritage Gold</p>
+                            <p class="fr-item-name">Ruby Choker Set</p>
+                        </div>
+                        <span class="fr-item-price">$5.5k</span>
+                    </div>
+                    <div class="fr-item" data-type="earrings" data-id="pearl-earrings" data-color="#F0EAD6"
+                        data-label="Pearl Drop Earrings" data-brand="Aurum Pearl" data-price="$1,200" data-emoji="🤍">
+                        <div class="fr-item-swatch" style="background:linear-gradient(135deg,#F0EAD6,#D4C5A9)"></div>
+                        <div class="fr-item-info">
+                            <p class="fr-item-brand">Aurum Pearl</p>
+                            <p class="fr-item-name">Pearl Drop Earrings</p>
+                        </div>
+                        <span class="fr-item-price">$1.2k</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CENTER: 3D AVATAR STAGE -->
+        <section class="fr-stage" id="frStage">
+            <!-- Avatar Type Toggle -->
+            <div class="fr-avatar-toggle">
+                <button class="fr-avatar-btn active" id="btnFemale" data-gender="female">
+                    <span class="avatar-icon material-symbols-outlined">female</span> Female
+                </button>
+                <button class="fr-avatar-btn" id="btnMale" data-gender="male">
+                    <span class="avatar-icon material-symbols-outlined">male</span> Male
+                </button>
+            </div>
+
+            <!-- Skin Tone Selector -->
+            <div class="fr-skin-tones" id="frSkinTones">
+                <span class="fr-skin-label">Skin Tone</span>
+                <div class="fr-skin-swatches">
+                    <button class="fr-skin-swatch active" data-tone="fair" title="Fair"
+                        style="background:#F0DFC0"></button>
+                    <button class="fr-skin-swatch" data-tone="light" title="Light" style="background:#DDB890"></button>
+                    <button class="fr-skin-swatch" data-tone="medium" title="Medium"
+                        style="background:#C08060"></button>
+                    <button class="fr-skin-swatch" data-tone="tan" title="Tan" style="background:#A06040"></button>
+                    <button class="fr-skin-swatch" data-tone="dark" title="Dark" style="background:#6B3820"></button>
+                    <button class="fr-skin-swatch" data-tone="deep" title="Deep" style="background:#3D1F10"></button>
+                </div>
+            </div>
+
+            <!-- 3D Canvas -->
+            <canvas id="avatarCanvas"></canvas>
+
+            <!-- Canvas overlay hints -->
+            <div class="fr-canvas-hint" id="canvasHint">
+                <span>🖱 Drag to Rotate &nbsp;|&nbsp; Scroll to Zoom</span>
+            </div>
+
+            <!-- Camera Controls -->
+            <div class="fr-cam-controls">
+                <button class="fr-cam-btn" id="btnReset" title="Reset View"><span class="material-symbols-outlined">replay</span></button>
+                <button class="fr-cam-btn" id="btnZoomIn" title="Zoom In"><span class="material-symbols-outlined">add</span></button>
+                <button class="fr-cam-btn" id="btnZoomOut" title="Zoom Out"><span class="material-symbols-outlined">remove</span></button>
+            </div>
+
+            <!-- Outfit change animation overlay -->
+            <div class="fr-outfit-flash" id="outfitFlash"></div>
+        </section>
+
+        <!-- RIGHT PANEL: Summary + CTA -->
+        <aside class="fr-summary" id="frSummary">
+            <h3 class="fr-summary-title">Your Look</h3>
+
+            <div class="fr-summary-section">
+                <p class="fr-summary-label">Avatar</p>
+                <div class="fr-summary-value" id="summaryAvatar">
+                    <span class="fr-summary-icon material-symbols-outlined">female</span> Female
+                </div>
+            </div>
+
+            <div class="fr-summary-section">
+                <p class="fr-summary-label">Selected Ensemble</p>
+                <div class="fr-summary-slot" id="summaryDress">
+                    <span class="fr-summary-empty">No attire selected</span>
+                </div>
+            </div>
+
+            <div class="fr-summary-section">
+                <p class="fr-summary-label">Necklace</p>
+                <div class="fr-summary-slot" id="summaryNecklace">
+                    <span class="fr-summary-empty">None selected</span>
+                </div>
+            </div>
+
+            <div class="fr-summary-section">
+                <p class="fr-summary-label">Earrings</p>
+                <div class="fr-summary-slot" id="summaryEarrings">
+                    <span class="fr-summary-empty">None selected</span>
+                </div>
+            </div>
+
+            <div class="fr-summary-section">
+                <p class="fr-summary-label">Bangles</p>
+                <div class="fr-summary-slot" id="summaryBangles">
+                    <span class="fr-summary-empty">None selected</span>
+                </div>
+            </div>
+
+            <div class="fr-summary-total" id="summaryTotal" style="display:none">
+                <span>Total</span>
+                <strong id="summaryTotalAmt">$0</strong>
+            </div>
+
+            <button class="btn btn-primary fr-cta" id="btnCustomize">✦ Customize Order</button>
+            <button class="btn btn-outline fr-clear-btn" id="btnClearAll">Clear All</button>
+        </aside>
+    </main>
+
+    <!-- MOBILE BOTTOM SHEET -->
+    <div class="fr-bottomsheet" id="frBottomSheet">
+        <div class="fr-bottomsheet-handle"></div>
+        <div class="fr-bottomsheet-inner" id="frBottomSheetInner"></div>
+    </div>
+    <div class="fr-bottomsheet-open-btn" id="frBottomSheetBtn">
+        <span><span class="material-symbols-outlined">apparel</span> Select Outfit</span>
+        <span class="fr-bs-arrow material-symbols-outlined">expand_less</span>
+    </div>
+
+    <!-- ORDER CONFIRMATION MODAL -->
+    <div class="fr-modal-overlay" id="frModalOverlay">
+        <div class="fr-modal glass-card" id="frModal">
+            <button class="fr-modal-close" id="frModalClose"><span class="material-symbols-outlined">close</span></button>
+            <div class="fr-modal-icon material-symbols-outlined">verified</div>
+            <h2 class="fr-modal-title">Selection Finalized</h2>
+            <p class="fr-modal-sub">Your bespoke jewellery selection has been curated.</p>
+            <div class="fr-modal-summary" id="frModalSummary"></div>
+            <div class="fr-modal-confetti" id="frModalConfetti"></div>
+            <button class="btn btn-primary fr-modal-cta" id="frModalCTA">Go to Concierge <span class="material-symbols-outlined">arrow_forward</span></button>
+            <button class="btn btn-outline fr-modal-back" id="frModalBack">Back to Atelier</button>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><span class="material-symbols-outlined">arrow_upward</span></button>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
+                                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
+                    <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
+                </div>
+
+                <!-- Collections -->
+                <div class="footer-col">
+                    <h4>Jewellery</h4>
+                    <ul>
+                        <li><a href="shop.html">Rings</a></li>
+                        <li><a href="shop.html">Necklaces</a></li>
+                        <li><a href="shop.html">Earrings</a></li>
+                        <li><a href="shop.html">Bracelets</a></li>
+                        <li><a href="collections.html">Bridal Jewellery</a></li>
+                        <li><a href="fitting-room.html">✦ Virtual Atelier</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Jewellery Care Guide</a></li>
+                        <li><a href="#">Returns & Warranty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support & Newsletter -->
+                <div class="footer-col">
+                    <h4>Join the Circle</h4>
+                    <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+                        <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Warranty</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- THREE.JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Modular JS -->
+    <script src="fitting-room-avatar.js"></script>
+    <script src="fitting-room-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

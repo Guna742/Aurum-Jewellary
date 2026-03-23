@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Shop luxury jewellery — handcrafted rings, necklaces, earrings, and bracelets. Pure 18K/22K gold and GIA certified diamonds at AURUM JEWELLERY.">
+  <title>Shop — AURUM JEWELLERY</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+</head>
+
+<body class="theme-page-shop">
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo"><span class="logo-main">AURUM</span><span class="logo-sub">JEWELLERY</span></div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+        <p class="preloader-tagline">Crafting Brilliance...</p>
+    </div>
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-dropdown">
+                <a href="collections.html">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
+                    <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
+                    <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
+                    <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
+                    <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
+                    <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="fitting-room.html" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#" class="cart-icon">
+            <span class="material-symbols-outlined">shopping_bag</span>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="menu-toggle" id="menuToggle"><span class="material-symbols-outlined">menu</span></div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="particles-bg"></div>
+        <div class="container">
+            <p class="hero-label fadeInUp stagger-1">✦ The Jewellery Box</p>
+            <h1 class="hero-title fadeInUp stagger-2">Shop <span class="highlight">Fine</span> Jewellery</h1>
+            <p class="hero-description fadeInUp stagger-3">Explore our curated collection of handcrafted luxury. Filter by category, material, or gemstone to find your signature piece.</p>
+            <div class="page-hero-divider fadeInUp stagger-4"></div>
+        </div>
+    </section>
+
+    <!-- SHOP LAYOUT -->
+    <div class="shop-layout container-lg">
+        <!-- Sidebar Filters -->
+        <aside class="shop-sidebar glass-card" style="padding:28px;">
+            <div class="filter-group">
+                <h4>Category</h4>
+                <label><input type="checkbox" checked> All</label>
+                <label><input type="checkbox"> Rings</label>
+                <label><input type="checkbox"> Necklaces</label>
+                <label><input type="checkbox"> Earrings</label>
+                <label><input type="checkbox"> Bracelets</label>
+                <label><input type="checkbox"> Bridal Sets</label>
+            </div>
+            <div class="filter-group">
+                <h4>Material</h4>
+                <label><input type="checkbox"> 18K Yellow Gold</label>
+                <label><input type="checkbox"> 18K White Gold</label>
+                <label><input type="checkbox"> 18K Rose Gold</label>
+                <label><input type="checkbox"> Platinum</label>
+                <label><input type="checkbox"> 22K Heritage Gold</label>
+            </div>
+            <div class="filter-group">
+                <h4>Gemstone</h4>
+                <label><input type="checkbox"> Diamond</label>
+                <label><input type="checkbox"> Emerald</label>
+                <label><input type="checkbox"> Ruby</label>
+                <label><input type="checkbox"> Sapphire</label>
+                <label><input type="checkbox"> Pearl</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <div class="price-range">
+                    <input type="text" class="price-input" placeholder="$0" aria-label="Min price">
+                    <span style="color:var(--gray-300);">—</span>
+                    <input type="text" class="price-input" placeholder="$1000" aria-label="Max price">
+                </div>
+            </div>
+            <button class="btn btn-primary" style="width:100%;padding:12px;font-size:0.8rem;">Apply Filters</button>
+        </aside>
+
+        <!-- Main Grid -->
+        <main>
+            <div class="shop-main-header">
+                <p class="results-count">Showing <strong style="color:var(--white);">12</strong> of 170 results</p>
+                <select class="sort-select" aria-label="Sort by">
+                    <option>Sort by: Featured</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Newest First</option>
+                    <option>Most Popular</option>
+                </select>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card glass-card reveal hover-zoom tilt-card"
+                    data-category="rings" data-brand="aurum" data-price="2450">
+                    <div class="product-image-wrap">
+                        <img src="assets/diamond-necklace-premium.png" alt="Diamond Solitaire Necklace" class="product-image"
+                            loading="lazy">
+                        <span class="product-badge">New In</span>
+                        <a href="tom-ford-tuxedo.html" class="full-link"></a>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">Aurum Signature</p>
+                        <h3 class="product-name">Ruby & Diamond Ring</h3>
+                        <p class="product-short-desc">1.5 carat round brilliant diamond with ruby accents in an 18K gold setting.</p>
+                        <div class="product-meta">
+                            <p class="product-price">$2,450</p>
+                            <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card glass-card reveal hover-zoom tilt-card reveal-delay-1">
+                    <div class="product-image-wrap">
+                        <img src="assets/ruby-ring-premium.png" alt="Ruby & Diamond Ring" class="product-image" loading="lazy">
+                        <span class="product-badge">Best Seller</span>
+                        <a href="cartier-jewelry.html" class="full-link"></a>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">Heritage Collection</p>
+                        <h3 class="product-name">Cartier Heritage Gold Set</h3>
+                        <p class="product-short-desc">Handcrafted 22K gold heritage set including necklace and earrings.</p>
+                        <div class="product-meta">
+                            <p class="product-price">$3,800</p>
+                            <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card glass-card reveal hover-zoom tilt-card reveal-delay-2">
+                    <div class="product-image-wrap">
+                        <img src="assets/emerald-drops-premium.png" alt="Royal Emerald Drops" class="product-image" loading="lazy">
+                        <span class="product-badge">Exclusive</span>
+                        <a href="valentino-gown.html" class="full-link"></a>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">Gemstone Luxe</p>
+                        <h3 class="product-name">Royal Emerald Drops</h3>
+                        <p class="product-short-desc">Natural Zambian emeralds surrounded by a halo of micro-diamonds.</p>
+                        <div class="product-meta">
+                            <p class="product-price">$5,200</p>
+                            <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card glass-card reveal hover-zoom tilt-card reveal-delay-3">
+                    <div class="product-image-wrap">
+                        <img src="assets/sapphire-bracelet-premium.png" alt="Sapphire & Diamond Bracelet" class="product-image" loading="lazy">
+                        <a href="hermes-birkin.html" class="full-link"></a>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">Aurum Elite</p>
+                        <h3 class="product-name">Sapphire & Diamond Bracelet</h3>
+                        <p class="product-short-desc">Exquisite blue sapphires and diamonds in a handcrafted bracelet.</p>
+                        <div class="product-meta">
+                            <p class="product-price">$6,450</p>
+                            <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card glass-card reveal hover-zoom tilt-card">
+                    <div class="product-image-wrap">
+                        <img src="assets/gold-set-premium.png" alt="Gold Heritage Necklace" class="product-image" loading="lazy">
+                        <a href="dior-velvet-dress.html" class="full-link"></a>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-brand">Eternal Aurum</p>
+                        <h3 class="product-name">Diamond Solitaire Necklace</h3>
+                        <p class="product-short-desc">Minimalist 1-carat diamond necklace in an 18K white gold chain.</p>
+                        <div class="product-meta">
+                            <p class="product-price">$4,500</p>
+                            <button class="btn btn-primary btn-add-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- More products follows same pattern -->
+            </div>
+
+            <div class="load-more reveal">
+                <button class="btn btn-outline">Load More Pieces</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- NEWSLETTER CTA -->
+    <section class="shop-newsletter">
+        <div class="shop-newsletter-inner glass-card reveal">
+            <h3>Never Miss a <span class="highlight">Drop</span></h3>
+            <p>Subscribe to get notified about new arrivals, limited editions, and exclusive member offers.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault();"><input type="email"
+                    placeholder="Your email address" aria-label="Email"><button type="submit">Subscribe</button></form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
+                                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
+                    <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
+                </div>
+
+                <!-- Collections -->
+                <div class="footer-col">
+                    <h4>Jewellery</h4>
+                    <ul>
+                        <li><a href="shop.html">Rings</a></li>
+                        <li><a href="shop.html">Necklaces</a></li>
+                        <li><a href="shop.html">Earrings</a></li>
+                        <li><a href="shop.html">Bracelets</a></li>
+                        <li><a href="collections.html">Bridal Jewellery</a></li>
+                        <li><a href="shop.html">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Jewellery Care Guide</a></li>
+                        <li><a href="#">Returns & Warranty</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="footer-col">
+                    <h4>Join the Circle</h4>
+                    <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+                        <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Returns & Warranty</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><span class="material-symbols-outlined">arrow_upward</span></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
