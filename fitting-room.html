@@ -26,28 +26,38 @@
     </div>
     <div class="page-transition" id="pageTransition"></div>
 
-    <!-- NAV -->
-    <nav class="navbar" id="navbar">
-        <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li class="has-dropdown">
-                <a href="collections.html">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
-                    <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
-                    <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
-                    <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
-                    <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
-                    <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="fitting-room.html" class="active" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <!-- NAV -->  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-home">Home</a></li>
+      <li class="has-dropdown">
+        <a href="collections.html" class="nav-collections">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
+          <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
+          <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
+          <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
+          <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
+          <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
         </ul>
-        <div class="menu-toggle" id="menuToggle"><span class="material-symbols-outlined">menu</span></div>
-    </nav>
+      </li>
+      <li><a href="about.html" class="nav-about">About Us</a></li>
+      <li><a href="reviews.html" class="nav-reviews">Reviews</a></li>
+      <li><a href="vip.html" class="nav-vip">VIP Elite</a></li>
+      <li><a href="fitting-room.html" class="nav-fitting active" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
+      <li><a href="contact.html" class="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="cart-icon">
+        <span class="material-symbols-outlined">shopping_bag</span>
+        <span class="cart-count">0</span>
+      </a>
+      <div class="menu-toggle" id="menuToggle">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    </div>
+  </nav>
 
     <!-- PAGE HERO STRIP -->
     <div class="fr-hero-strip">
@@ -68,10 +78,10 @@
 
             <!-- BRIDAL SETS -->
             <div class="fr-items-panel" id="tab-dresses">
-                <div class="fr-category-label">Royal Bridal Collections</div>
+                <div class="fr-category-label">Royal Bridal Sets</div>
                 <div class="fr-items-grid">
-                    <div class="fr-item" data-type="dress" data-id="ivory-bridal" data-color="#F5F0E8"
-                        data-label="Heirloom Bridal Gown" data-brand="Royal Aurum" data-price="$15,800"
+                    <div class="fr-item" data-type="dress" data-id="tiara" data-color="#F5F0E8"
+                        data-label="Heirloom Diamond Tiara" data-brand="Royal Aurum" data-price="$15,800"
                         data-emoji="⚪">
                         <div class="fr-item-swatch" style="background:linear-gradient(135deg,#F5F0E8,#C8B99A)"></div>
                         <div class="fr-item-info">
@@ -80,12 +90,12 @@
                         </div>
                         <span class="fr-item-price">$15.8k</span>
                     </div>
-                    <div class="fr-item" data-type="dress" data-id="crimson-gown" data-color="#8B0000"
-                        data-label="Ruby Gala Gown" data-brand="Heritage Gold" data-price="$8,500" data-emoji="🔴">
+                    <div class="fr-item" data-type="dress" data-id="choker" data-color="#8B0000"
+                        data-label="Ruby Choker Set" data-brand="Heritage Gold" data-price="$8,500" data-emoji="🔴">
                         <div class="fr-item-swatch" style="background:linear-gradient(135deg,#8B0000,#4B0082)"></div>
                         <div class="fr-item-info">
                             <p class="fr-item-brand">Heritage Gold</p>
-                            <p class="fr-item-name">Ruby Gala Gown</p>
+                            <p class="fr-item-name">Ruby Choker Set</p>
                         </div>
                         <span class="fr-item-price">$8.5k</span>
                     </div>
@@ -197,7 +207,7 @@
             <div class="fr-summary-section">
                 <p class="fr-summary-label">Selected Ensemble</p>
                 <div class="fr-summary-slot" id="summaryDress">
-                    <span class="fr-summary-empty">No attire selected</span>
+                    <span class="fr-summary-empty">No jewellery selected</span>
                 </div>
             </div>
 
@@ -258,62 +268,69 @@
 
     <button class="back-to-top" id="backToTop" aria-label="Back to top"><span class="material-symbols-outlined">arrow_upward</span></button>
 
+      <!-- ====== FOOTER ====== -->
     <!-- ====== FOOTER ====== -->
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer-main">
-                <!-- Brand -->
-                <div class="footer-brand">
-                    <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
-                                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
-                    <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
-                </div>
-
-                <!-- Collections -->
-                <div class="footer-col">
-                    <h4>Jewellery</h4>
-                    <ul>
-                        <li><a href="shop.html">Rings</a></li>
-                        <li><a href="shop.html">Necklaces</a></li>
-                        <li><a href="shop.html">Earrings</a></li>
-                        <li><a href="shop.html">Bracelets</a></li>
-                        <li><a href="collections.html">Bridal Jewellery</a></li>
-                        <li><a href="fitting-room.html">✦ Virtual Atelier</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company -->
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Jewellery Care Guide</a></li>
-                        <li><a href="#">Returns & Warranty</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Support & Newsletter -->
-                <div class="footer-col">
-                    <h4>Join the Circle</h4>
-                    <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault();">
-                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
-                        <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Returns & Warranty</a>
-                </div>
-            </div>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
+                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
+          <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><span class="material-symbols-outlined">brand_family</span></a>
+            <a href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+            <a href="#" aria-label="Twitter"><span class="material-symbols-outlined">share</span></a>
+            <a href="#" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a>
+          </div>
         </div>
-    </footer>
+
+        <!-- Collections -->
+        <div class="footer-col">
+          <h4>Jewellery</h4>
+          <ul>
+            <li><a href="shop.html">Rings</a></li>
+            <li><a href="shop.html">Necklaces</a></li>
+            <li><a href="shop.html">Earrings</a></li>
+            <li><a href="shop.html">Bracelets</a></li>
+            <li><a href="collections.html">Bridal Jewellery</a></li>
+            <li><a href="shop.html">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="vip.html">VIP Elite</a></li>
+            <li><a href="#">Jewellery Care Guide</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h4>Join the Circle</h4>
+          <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+            <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Returns & Warranty</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <!-- THREE.JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -324,3 +341,8 @@
 </body>
 
 </html>
+
+
+
+
+

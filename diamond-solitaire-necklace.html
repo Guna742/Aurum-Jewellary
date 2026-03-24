@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartier Gold Statement Set — AURUM JEWELLERY</title>
+    <meta name="description"
+        content="The Eternal Solitaire Necklace — a brilliant-cut diamond suspended by a delicate 18K white gold chain, available at AURUM JEWELLERY.">
+    <title>Diamond Solitaire Necklace — AURUM JEWELLERY</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
 </head>
 
-<body class="theme-page-cartier">  <!-- ====== NAVIGATION ====== -->
+<body class="theme-page-dior">  <!-- ====== NAVIGATION ====== -->
   <nav class="navbar" id="navbar">
     <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
     <ul class="nav-links" id="navLinks">
@@ -47,100 +48,64 @@
     <section class="product-detail">
         <div class="container">
             <div class="fadeInUp stagger-1" style="margin-bottom:32px;font-size:0.85rem;color:var(--gray-200);">
-                <a href="index.html" style="color:var(--gray-200);">Home</a> <span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:middle;">chevron_right</span>
-                <a href="collections.html" style="color:var(--gray-200);">Accessories</a> <span class="material-symbols-outlined" style="font-size:0.8rem;vertical-align:middle;">chevron_right</span> Cartier
+                <a href="index.html" style="color:var(--gray-200);">Home</a> / <a href="shop.html">Necklaces</a> /
+                Diamond Solitaire
             </div>
             <div class="product-detail-grid">
                 <div class="product-gallery">
-                    <img src="assets/gold-set-premium.png" alt="Cartier Heritage Gold Set" class="main-image active" id="mainProdImage">
+                    <img src="assets/diamond-necklace-premium.png" alt="Diamond Solitaire Necklace" class="main-image active" id="mainProdImage">
                 </div>
                 <div class="product-details-info">
-                    <span class="product-brand-label fadeInUp stagger-2">Cartier</span>
-                    <h1 class="fadeInUp stagger-3">Gold Statement Set</h1>
+                    <span class="product-brand-label fadeInUp stagger-2">Essential Aurum</span>
+                    <h1 class="fadeInUp stagger-3">Eternal Solitaire Necklace</h1>
+                    <div class="menu-toggle" id="menuToggle">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
                     <div class="product-rating-bar">
                         <span class="stars">★★★★★</span>
-                        <span>5.0 (18 reviews)</span>
+                        <span>4.9 (21 reviews)</span>
                     </div>
 
                     <div class="product-price-section">
                         <p class="price-label">Price</p>
-                        <p class="price">$14,500</p>
-                        <p class="retail-price">Includes Heritage Warranty</p>
+                        <p class="price">$2,450</p>
+                        <p class="retail-price">Includes GIA Certification</p>
                     </div>
 
                     <p class="product-description">
-                        Pure elegance and sophistication. This Cartier gold set includes a necklace and matching
-                        earrings crafted from 18k yellow gold. Perfect for making a statement at any high-profile event.
+                        Pure simplicity meets absolute brilliance. This necklace features a hand-selected 0.75-carat round brilliant diamond, set in a minimalist four-prong mount of 18K white gold. A timeless staple for every jewellery collection.
                     </p>
 
                     <!-- Size Selector -->
                     <div class="size-selector">
-                        <label>Select Fit</label>
+                        <label>Select Chain Length</label>
                         <div class="size-options">
-                            <span class="size-option selected" data-size="One Size (Universal)"
-                                onclick="selectSize(this)"><span class="size-letter">One Size</span><span
-                                    class="size-cm">Universal Fit</span></span>
-                            <span class="size-option" data-size="S/M (Petite)" onclick="selectSize(this)"><span
-                                    class="size-letter">S/M</span><span class="size-cm">Petite / 15–16"</span></span>
-                            <span class="size-option" data-size="M/L (Standard)" onclick="selectSize(this)"><span
-                                    class="size-letter">M/L</span><span class="size-cm">Standard / 16–18"</span></span>
+                            <span class="size-option" data-size="16 inch" onclick="selectSize(this)"><span class="size-letter">16"</span><span class="size-cm">40 cm</span></span>
+                            <span class="size-option selected" data-size="18 inch" onclick="selectSize(this)"><span class="size-letter">18"</span><span class="size-cm">45 cm</span></span>
+                            <span class="size-option" data-size="20 inch" onclick="selectSize(this)"><span class="size-letter">20"</span><span class="size-cm">50 cm</span></span>
                         </div>
                     </div>
 
-                    <!-- Duration Selector -->
-                    <div class="duration-selector">
-                        <label>Select Rental Duration</label>
-                        <div class="duration-options">
-                            <div class="duration-option" onclick="selectDuration(this)">
-                                <strong>4 Days</strong>
-                                <span class="dur-price">$380</span>
-                            </div>
-                            <div class="duration-option selected" onclick="selectDuration(this)">
-                                <strong>7 Days</strong>
-                                <span class="dur-price">$520</span>
-                            </div>
-                            <div class="duration-option" onclick="selectDuration(this)">
-                                <strong>14 Days</strong>
-                                <span class="dur-price">$700</span>
-                            </div>
-                            <div class="duration-option" onclick="selectDuration(this)">
-                                <strong>30 Days</strong>
-                                <span class="dur-price">$1,050</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Calendar -->
-                    <div class="availability-calendar">
-                        <label>Availability Calendar</label>
-                        <div class="calendar-widget" id="calendarWidget">
-                            <div class="calendar-header">
-                                <button onclick="changeMonth(-1, this)"><span class="material-symbols-outlined">chevron_left</span></button>
-                                <h4 id="calendarMonth">March 2026</h4>
-                                <button onclick="changeMonth(1, this)"><span class="material-symbols-outlined">chevron_right</span></button>
-                            </div>
-                            <div class="calendar-days" id="calendarDays">
-                                <!-- Generated by JS -->
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Spacing -->
+                    <div style="margin-bottom:30px;"></div>
 
                     <!-- Reserve Button -->
                     <div class="reserve-actions">
-                        <button class="btn btn-primary btn-reserve" onclick="addToCart('Cartier Gold Set', 14500, 'assets/gold-jewelry.png')">
-                            Add to Cart — $14,500
+                        <button class="btn btn-primary btn-reserve" onclick="addToCart('Eternal Solitaire Necklace', 2450, 'assets/diamond-necklace.png')">
+                            Add to Cart — $2,450
                         </button>
                         <button class="btn-wishlist" onclick="toggleWishlist(this)"
-                            aria-label="Add to wishlist"><span class="material-symbols-outlined">favorite</span></button>
+                            aria-label="Add to wishlist">♡</button>
                     </div>
 
                     <!-- Features -->
                     <ul class="product-features">
-                        <li><span class="feature-icon material-symbols-outlined">verified</span> Insured shipping &amp; tamper-proof packaging</li>
-                        <li><span class="feature-icon">✦</span> Professional cleaning &amp; inspection included</li>
-                        <li><span class="feature-icon">✦</span> Certificate of authenticity provided</li>
-                        <li><span class="feature-icon">✦</span> 24/7 concierge support</li>
-                        <li><span class="feature-icon">✦</span> Authenticity guaranteed</li>
+                        <li><span class="feature-icon">✦</span> 0.75 Carat Round Brilliant Diamond</li>
+                        <li><span class="feature-icon material-symbols-outlined">verified</span> 100% Conflict-free Diamonds</li>
+                        <li><span class="feature-icon">✦</span> 18K White Gold Chain Included</li>
+                        <li><span class="feature-icon">✦</span> Lifetime Complimentary Polishing</li>
+                        <li><span class="feature-icon">✦</span> Secure Lobster Clasp</li>
+                        <li><span class="feature-icon">✦</span> GIA Grading Report</li>
                     </ul>
                 </div>
             </div>

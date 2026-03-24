@@ -25,28 +25,38 @@
     </div>
     <div class="page-transition" id="pageTransition"></div>
 
-    <!-- NAV -->
-    <nav class="navbar" id="navbar">
-        <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li class="has-dropdown">
-                <a href="collections.html">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
-                    <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
-                    <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
-                    <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
-                    <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
-                    <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="fitting-room.html" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <!-- NAV -->  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">AURUM<span>JEWELLERY</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-home">Home</a></li>
+      <li class="has-dropdown">
+        <a href="collections.html" class="nav-collections">Collections <span class="material-symbols-outlined" style="font-size: 1rem;">expand_more</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="shop.html?cat=rings">Rings <span class="material-symbols-outlined">diamond</span></a></li>
+          <li><a href="shop.html?cat=necklaces">Necklaces <span class="material-symbols-outlined">auto_awesome</span></a></li>
+          <li><a href="shop.html?cat=earrings">Earrings <span class="material-symbols-outlined">layers</span></a></li>
+          <li><a href="shop.html?cat=bracelets">Bracelets <span class="material-symbols-outlined">cyclone</span></a></li>
+          <li><a href="collections.html#bridal">Bridal Jewellery <span class="material-symbols-outlined">brand_family</span></a></li>
+          <li><a href="shop.html?sort=new">New Arrivals <span class="material-symbols-outlined">stars</span></a></li>
         </ul>
-        <div class="menu-toggle" id="menuToggle"><span class="material-symbols-outlined">menu</span></div>
-    </nav>
+      </li>
+      <li><a href="about.html" class="nav-about">About Us</a></li>
+      <li><a href="reviews.html" class="nav-reviews">Reviews</a></li>
+      <li><a href="vip.html" class="nav-vip">VIP Elite</a></li>
+      <li><a href="fitting-room.html" class="nav-fitting" style="color:var(--gold-light);font-weight:700;">Virtual Atelier</a></li>
+      <li><a href="contact.html" class="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="cart-icon">
+        <span class="material-symbols-outlined">shopping_bag</span>
+        <span class="cart-count">0</span>
+      </a>
+      <div class="menu-toggle" id="menuToggle">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+    </div>
+  </nav>
 
     <!-- PAGE HERO -->
     <section class="page-hero">
@@ -70,22 +80,22 @@
                     these simple steps using a soft measuring tape.</p>
             </div>
             <div class="steps-grid">
-                <div class="step-card glass-card tilt-card reveal reveal-delay-1">
+                <div class="step-card glass-card reveal reveal-delay-1">
                     <div class="step-number float-animation">1</div>
                     <h4>Ring Diameter</h4>
                     <p>Measure the inside diameter of an existing ring that fits your finger perfectly.</p>
                 </div>
-                <div class="step-card glass-card tilt-card reveal reveal-delay-2">
+                <div class="step-card glass-card reveal reveal-delay-2">
                     <div class="step-number float-animation">2</div>
                     <h4>Finger Circumference</h4>
                     <p>Wrap a piece of string around your finger and measure the length in millimeters.</p>
                 </div>
-                <div class="step-card glass-card tilt-card reveal reveal-delay-3">
+                <div class="step-card glass-card reveal reveal-delay-3">
                     <div class="step-number float-animation">3</div>
                     <h4>Wrist Size</h4>
                     <p>Measure your wrist just below the wrist bone where you would normally wear a bracelet.</p>
                 </div>
-                <div class="step-card glass-card tilt-card reveal reveal-delay-4">
+                <div class="step-card glass-card reveal reveal-delay-4">
                     <div class="step-number float-animation">4</div>
                     <h4>Necklace Drop</h4>
                     <p>Consider where you want the pendant to sit. Standard lengths range from 16 to 24 inches.</p>
@@ -98,8 +108,8 @@
     <section class="comparison" style="padding-top:40px;">
         <div class="container">
             <div class="comparison-header">
-                <span class="section-label fadeInUp stagger-1"><span class="material-symbols-outlined" style="font-size: 1.2rem; vertical-align: middle;">woman</span> Women's Sizing</span>
-                <h2 class="section-title fadeInUp stagger-2">Dresses & Gowns</h2>
+                <span class="section-label fadeInUp stagger-1"><span class="material-symbols-outlined" style="font-size: 1.2rem; vertical-align: middle;">diamond</span> Women's Sizing</span>
+                <h2 class="section-title fadeInUp stagger-2">Ring Size Guide</h2>
             </div>
             <table class="comparison-table glass-card reveal">
                 <thead>
@@ -163,8 +173,8 @@
     <section class="comparison" style="padding-top:60px;">
         <div class="container">
             <div class="comparison-header">
-                <span class="section-label fadeInUp stagger-1"><span class="material-symbols-outlined" style="font-size: 1.2rem; vertical-align: middle;">man</span> Men's Sizing</span>
-                <h2 class="section-title fadeInUp stagger-2">Suits & Tuxedos</h2>
+                <span class="section-label fadeInUp stagger-1"><span class="material-symbols-outlined" style="font-size: 1.2rem; vertical-align: middle;">auto_awesome</span> Men's Sizing</span>
+                <h2 class="section-title fadeInUp stagger-2">Necklace Lengths</h2>
             </div>
             <table class="comparison-table glass-card reveal">
                 <thead>
@@ -213,34 +223,34 @@
                 <h2 class="section-title fadeInUp stagger-2">Fit Tips</h2>
             </div>
             <div class="benefits-grid">
-                <div class="benefit-card glass-card tilt-card reveal reveal-delay-1">
+                <div class="benefit-card glass-card reveal reveal-delay-1">
                     <div class="benefit-icon float-animation"><span class="material-symbols-outlined">straighten</span></div>
                     <h4>Between Sizes?</h4>
                     <p>For rings, we recommend sizing up. For necklaces, consider a piece with an adjustable chain or extender.</p>
                 </div>
-                <div class="benefit-card glass-card tilt-card reveal reveal-delay-2">
+                <div class="benefit-card glass-card reveal reveal-delay-2">
                     <div class="benefit-icon float-animation"><span class="material-symbols-outlined">thermostat</span></div>
                     <h4>Temperature Matters</h4>
                     <p>Fingers shrink in the cold and swell in the heat. Measure your finger at the end of the day when they are at their largest.</p>
                 </div>
-                <div class="benefit-card glass-card tilt-card reveal reveal-delay-3">
+                <div class="benefit-card glass-card reveal reveal-delay-3">
                     <div class="benefit-icon float-animation"><span class="material-symbols-outlined">visibility</span></div>
                     <h4>Bespoke Fitting</h4>
                     <p>For high-jewellery pieces, we offer personalized fitting sessions at our flagship boutiques.</p>
                 </div>
-                <div class="benefit-card glass-card tilt-card reveal reveal-delay-1">
+                <div class="benefit-card glass-card reveal reveal-delay-1">
                     <div class="benefit-icon float-animation"><span class="material-symbols-outlined">forum</span></div>
                     <h4>Ask Our Stylists</h4>
                     <p>Not sure about fit? Our personal stylists offer free sizing consultations for all members. Just
                         reach out via chat.</p>
                 </div>
-                <div class="benefit-card glass-card tilt-card reveal reveal-delay-2">
+                <div class="benefit-card glass-card reveal reveal-delay-2">
                     <div class="benefit-icon float-animation"><span class="material-symbols-outlined">apparel</span></div>
                     <h4>Designer Sizing Varies</h4>
                     <p>Italian and French designers often run small. Our product pages note any sizing anomalies for
                         each specific piece.</p>
                 </div>
-                <div class="benefit-card glass-card tilt-card reveal reveal-delay-3">
+                <div class="benefit-card glass-card reveal reveal-delay-3">
                     <div class="benefit-icon float-animation"><span class="material-symbols-outlined">inventory_2</span></div>
                     <h4>Try Early</h4>
                     <p>We recommend trying your rental as soon as it arrives. If the fit isn't right, contact us
@@ -260,61 +270,68 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer-main">
-                <!-- Brand -->
-                <div class="footer-brand">
-                    <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
-                                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
-                    <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
-                </div>
-
-                <!-- Collections -->
-                <div class="footer-col">
-                    <h4>Jewellery</h4>
-                    <ul>
-                        <li><a href="shop.html">Rings</a></li>
-                        <li><a href="shop.html">Necklaces</a></li>
-                        <li><a href="shop.html">Earrings</a></li>
-                        <li><a href="shop.html">Bracelets</a></li>
-                        <li><a href="collections.html">Bridal Jewellery</a></li>
-                        <li><a href="shop.html">New Arrivals</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company -->
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Jewellery Care Guide</a></li>
-                        <li><a href="#">Returns & Warranty</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Support -->
-                <div class="footer-col">
-                    <h4>Join the Circle</h4>
-                    <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault();">
-                        <input type="email" placeholder="Your email" aria-label="Email for newsletter">
-                        <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Returns & Warranty</a>
-                </div>
-            </div>
+      <!-- ====== FOOTER ====== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo"><a href="index.html" style="color:inherit;text-decoration:none;">AURUM<span
+                style="color:var(--white);font-weight:400;">JEWELLERY</span></a></div>
+          <p class="footer-desc">Premium handcrafted jewellery designed to celebrate life's most beautiful moments. Hand-selected diamonds and 100% pure gold.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><span class="material-symbols-outlined">brand_family</span></a>
+            <a href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+            <a href="#" aria-label="Twitter"><span class="material-symbols-outlined">share</span></a>
+            <a href="#" aria-label="YouTube"><span class="material-symbols-outlined">play_circle</span></a>
+          </div>
         </div>
-    </footer>
+
+        <!-- Collections -->
+        <div class="footer-col">
+          <h4>Jewellery</h4>
+          <ul>
+            <li><a href="shop.html">Rings</a></li>
+            <li><a href="shop.html">Necklaces</a></li>
+            <li><a href="shop.html">Earrings</a></li>
+            <li><a href="shop.html">Bracelets</a></li>
+            <li><a href="collections.html">Bridal Jewellery</a></li>
+            <li><a href="shop.html">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="vip.html">VIP Elite</a></li>
+            <li><a href="#">Jewellery Care Guide</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h4>Join the Circle</h4>
+          <p style="font-size:0.8rem;color:var(--gray-200);margin-top:20px;margin-bottom:8px;">Subscribe for exclusive access & early releases:</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+            <button type="submit"><span class="material-symbols-outlined">arrow_forward</span></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 AURUM JEWELLERY. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Returns & Warranty</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <button class="back-to-top" id="backToTop" aria-label="Back to top"><span class="material-symbols-outlined">arrow_upward</span></button>
 
@@ -322,3 +339,8 @@
 </body>
 
 </html>
+
+
+
+
+

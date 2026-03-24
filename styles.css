@@ -584,14 +584,7 @@ h6 {
   transform: scale(1.15) rotate(1deg);
 }
 
-.tilt-card {
-  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
-  transform-style: preserve-3d;
-}
 
-.tilt-card:hover {
-  box-shadow: var(--shadow-lg), var(--shadow-glow-gold);
-}
 
 .menu-toggle {
   display: flex;
@@ -854,16 +847,7 @@ h6 {
   transition: all 0.3s;
 }
 
-/* ---------- Card Tilt / 3D Hover ---------- */
-.tilt-card {
-  transition: transform 0.3s ease;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
 
-.tilt-card:hover {
-  transform: perspective(1000px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
-}
 
 /* ---------- Marquee / Infinite Scroll ---------- */
 .marquee-track {
@@ -3462,29 +3446,7 @@ h6 {
   display: block;
 }
 
-/* Enhanced Magnetic/Tilt Card Effects */
-.tilt-card {
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.1s ease-out, box-shadow 0.3s ease;
-}
 
-.tilt-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(255, 255, 255, 0.06),
-      transparent 40%);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.tilt-card:hover::after {
-  opacity: 1;
-}
 
 /* Section Specific Borders */
 .contact-form-card,
@@ -3642,11 +3604,7 @@ h6 {
   line-height: 1.6;
 }
 
-/* Enhanced Tilt */
-.tilt-card {
-  transition: transform 0.2s var(--ease-premium);
-  transform-style: preserve-3d;
-}
+
 
 /* ============================================
    SIZE SELECTOR — Product Detail Pages
