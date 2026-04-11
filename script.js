@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cursorGlow = document.createElement('div');
     cursorGlow.style.cssText = `
       position: fixed; width: 300px; height: 300px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(204,27,27,0.06), rgba(75,0,130,0.04), transparent 70%);
+      background: radial-gradient(circle, rgba(6, 78, 59, 0.08), rgba(153, 101, 21, 0.05), transparent 70%);
       pointer-events: none; z-index: 0; transform: translate(-50%, -50%);
       transition: left 0.15s ease, top 0.15s ease;
     `;
@@ -513,7 +513,7 @@ function shakeSection(selector) {
   const el = document.querySelector(selector);
   if (!el) return;
   el.style.transition = 'box-shadow 0.3s';
-  el.style.boxShadow = '0 0 0 2px rgba(220,50,50,0.7), 0 0 20px rgba(139,0,0,0.3)';
+  el.style.boxShadow = '0 0 0 2px rgba(153, 101, 21, 0.7), 0 0 20px rgba(6, 78, 59, 0.3)';
   el.style.borderRadius = '10px';
   el.classList.remove('shake');
   // Force reflow to restart animation

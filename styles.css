@@ -4,7 +4,7 @@
    ============================================ */
 
 /* ---------- Google Fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* ---------- Material Symbols ---------- */
 .material-symbols-outlined {
@@ -31,32 +31,35 @@
   --gold: #D4AF37;
   --gold-light: #F9E27D;
   --gold-dark: #996515;
-  --matte-black: #0B0B0B;
-  --ivory: #FDFBF7;
+  --emerald: #064E3B;
+  --emerald-light: #10B981;
+  --emerald-dark: #022C22;
+  --matte-black: #080808;
   --white: #FFFFFF;
+  --off-white: #F8F9FA;
 
   /* Neutrals */
-  --off-white: var(--ivory);
   --gray-100: #C0BFBD;
   --gray-200: #8A8987;
   --gray-300: #5A5856;
   --gray-400: #2A2928;
-  --dark-surface: #0B0B0B;
-  --dark-card: #111111;
+  --dark-surface: #080808;
+  --dark-card: #0F0F0F;
 
   /* Gradients */
   --gradient-gold: linear-gradient(135deg, #D4AF37, #F9E27D, #996515);
-  --gradient-dark: linear-gradient(180deg, #0B0B0B, #111111);
-  --gradient-hero: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(0, 0, 0, 0.8));
+  --gradient-emerald: linear-gradient(135deg, #064E3B, #059669, #022C22);
+  --gradient-dark: linear-gradient(180deg, #080808, #121212);
+  --gradient-hero: linear-gradient(135deg, rgba(2, 44, 34, 0.95), rgba(8, 8, 8, 0.92));
 
   /* Glass */
-  --glass-bg: rgba(18, 18, 18, 0.75);
-  --glass-border: rgba(212, 175, 55, 0.2);
+  --glass-bg: rgba(15, 15, 15, 0.7);
+  --glass-border: rgba(6, 78, 59, 0.3);
   --glass-blur: blur(20px);
 
   /* Typography */
-  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Cinzel Decorative', 'Cinzel', serif;
+  --font-body: 'Poppins', sans-serif;
 
   /* Spacing */
   --section-pad: 20px 5%;
@@ -68,6 +71,7 @@
   --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
   --shadow-glow-gold: 0 0 30px rgba(212, 175, 55, 0.2);
+  --shadow-glow-emerald: 0 0 30px rgba(6, 78, 59, 0.3);
   --shadow-glow-soft: 0 0 40px rgba(255, 255, 255, 0.05);
 
   /* Transitions */
@@ -85,6 +89,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Ensure form elements inherit the body font */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
 }
 
 html {
@@ -421,16 +436,16 @@ h6 {
 /* ---------- Unique Themes & Effects ---------- */
 
 .theme-page-index {
-  background: radial-gradient(circle at 20% 30%, rgba(75, 0, 130, 0.2), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(139, 0, 0, 0.15), transparent 60%),
-    #0a0a12;
+  background: radial-gradient(circle at 20% 30%, rgba(6, 78, 59, 0.25), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(153, 101, 21, 0.15), transparent 60%),
+    #050805;
   background-attachment: fixed;
 }
 
 .theme-page-collections {
-  background: radial-gradient(circle at 30% 20%, rgba(30, 58, 138, 0.25), transparent 60%),
-    radial-gradient(circle at 70% 80%, rgba(75, 0, 130, 0.15), transparent 60%),
-    #0a0a1a;
+  background: radial-gradient(circle at 30% 20%, rgba(6, 78, 59, 0.25), transparent 60%),
+    radial-gradient(circle at 70% 80%, rgba(2, 44, 34, 0.15), transparent 60%),
+    #050808;
   background-attachment: fixed;
 }
 
@@ -448,64 +463,64 @@ h6 {
 }
 
 .theme-page-vip {
-  background: radial-gradient(circle at 20% 30%, rgba(120, 53, 15, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(204, 27, 27, 0.15), transparent 60%),
-    #0a0805;
+  background: radial-gradient(circle at 20% 30%, rgba(153, 101, 21, 0.2), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(6, 78, 59, 0.15), transparent 60%),
+    #080805;
   background-attachment: fixed;
 }
 
 .theme-page-reviews {
-  background: radial-gradient(circle at 20% 30%, rgba(127, 29, 29, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(75, 0, 130, 0.15), transparent 60%),
-    #0a0505;
-  background-attachment: fixed;
-}
-
-.theme-page-contact {
-  background: radial-gradient(circle at 20% 30%, rgba(30, 58, 138, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(15, 23, 42, 0.2), transparent 60%),
-    #05050a;
-  background-attachment: fixed;
-}
-
-.theme-page-how {
-  background: radial-gradient(circle at 50% 50%, rgba(26, 26, 26, 0.3), transparent 70%),
-    #000000;
-  background-attachment: fixed;
-}
-
-.theme-page-size {
-  background: radial-gradient(circle at 20% 30%, rgba(51, 65, 85, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(15, 23, 42, 0.2), transparent 60%),
-    #0a0a1a;
-  background-attachment: fixed;
-}
-
-.theme-page-valentino {
-  background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.15), transparent 60%),
-    radial-gradient(circle at bottom left, rgba(10, 10, 10, 0.2), transparent 60%),
+  background: radial-gradient(circle at 20% 30%, rgba(6, 78, 59, 0.2), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(8, 8, 8, 0.15), transparent 60%),
     #050505;
   background-attachment: fixed;
 }
 
+.theme-page-contact {
+  background: radial-gradient(circle at 20% 30%, rgba(6, 78, 59, 0.25), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(2, 44, 34, 0.2), transparent 60%),
+    #05080a;
+  background-attachment: fixed;
+}
+
+.theme-page-how {
+  background: radial-gradient(circle at 50% 50%, rgba(6, 78, 59, 0.15), transparent 70%),
+    #050805;
+  background-attachment: fixed;
+}
+
+.theme-page-size {
+  background: radial-gradient(circle at 20% 30%, rgba(6, 78, 59, 0.2), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(153, 101, 21, 0.1), transparent 60%),
+    #050805;
+  background-attachment: fixed;
+}
+
+.theme-page-valentino {
+  background: radial-gradient(circle at top right, rgba(6, 78, 59, 0.2), transparent 60%),
+    radial-gradient(circle at bottom left, rgba(153, 101, 21, 0.15), transparent 60%),
+    #050805;
+  background-attachment: fixed;
+}
+
 .theme-page-ford {
-  background: radial-gradient(circle at 20% 30%, rgba(30, 58, 138, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(30, 27, 75, 0.2), transparent 60%),
-    #050512;
+  background: radial-gradient(circle at 20% 30%, rgba(6, 78, 59, 0.2), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(2, 44, 34, 0.15), transparent 60%),
+    #050805;
   background-attachment: fixed;
 }
 
 .theme-page-hermes {
-  background: radial-gradient(circle at 20% 30%, rgba(146, 64, 14, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(124, 45, 18, 0.2), transparent 60%),
-    #120a05;
+  background: radial-gradient(circle at 20% 30%, rgba(153, 101, 21, 0.2), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(6, 78, 59, 0.15), transparent 60%),
+    #080805;
   background-attachment: fixed;
 }
 
 .theme-page-vera {
-  background: radial-gradient(circle at 20% 30%, rgba(64, 64, 64, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(30, 41, 59, 0.2), transparent 60%),
-    #0a0a0a;
+  background: radial-gradient(circle at 20% 30%, rgba(6, 78, 59, 0.25), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(8, 8, 8, 0.2), transparent 60%),
+    #050505;
   background-attachment: fixed;
 }
 
@@ -524,9 +539,9 @@ h6 {
 }
 
 .theme-page-detail {
-  background: radial-gradient(circle at 20% 30%, rgba(17, 94, 89, 0.25), transparent 60%),
-    radial-gradient(circle at 80% 70%, rgba(88, 28, 135, 0.15), transparent 60%),
-    #050a0a;
+  background: radial-gradient(circle at 20% 30%, rgba(6, 78, 59, 0.2), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(153, 101, 21, 0.1), transparent 60%),
+    #050805;
   background-attachment: fixed;
 }
 
@@ -1024,9 +1039,9 @@ h6 {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(139, 0, 0, 0.2), transparent 60%),
-    radial-gradient(ellipse at 80% 50%, rgba(75, 0, 130, 0.2), transparent 60%),
-    linear-gradient(to bottom, transparent 60%, var(--matte-black));
+    radial-gradient(ellipse at 20% 50%, rgba(6, 78, 59, 0.4), transparent 70%),
+    radial-gradient(ellipse at 80% 50%, rgba(2, 44, 34, 0.5), transparent 70%),
+    linear-gradient(to bottom, transparent 40%, var(--matte-black));
   z-index: 1;
 }
 
@@ -1063,6 +1078,7 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
 }
 
 .hero-description {
@@ -1109,7 +1125,7 @@ h6 {
 .hero-scroll .scroll-line {
   width: 1px;
   height: 50px;
-  background: linear-gradient(to bottom, var(--gold), transparent);
+  background: linear-gradient(to bottom, var(--emerald-light), transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
@@ -1185,7 +1201,7 @@ h6 {
 }
 
 .collection-card:hover .card-overlay {
-  background: linear-gradient(to top, rgba(139, 0, 0, 0.7) 0%, rgba(75, 0, 130, 0.2) 60%);
+  background: linear-gradient(to top, rgba(2, 44, 34, 0.8) 0%, rgba(6, 78, 59, 0.3) 60%);
 }
 
 .collection-card .card-content {
@@ -1298,9 +1314,9 @@ h6 {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: rgba(212, 175, 55, 0.1);
-  border-color: var(--gold);
-  color: var(--gold);
+  background: rgba(6, 78, 59, 0.2);
+  border-color: var(--emerald-light);
+  color: var(--emerald-light);
 }
 
 .filter-btn svg {
@@ -1346,7 +1362,7 @@ h6 {
   position: absolute;
   top: 16px;
   left: 16px;
-  background: var(--deep-red);
+  background: var(--emerald);
   color: var(--white);
   font-size: 0.7rem;
   font-weight: 600;
@@ -1355,6 +1371,7 @@ h6 {
   padding: 6px 14px;
   border-radius: 100px;
   z-index: 2;
+  box-shadow: 0 0 15px rgba(6, 78, 59, 0.3);
 }
 
 .product-card .quick-view {

@@ -149,19 +149,10 @@
 
         <!-- CENTER: 3D AVATAR STAGE -->
         <section class="fr-stage" id="frStage">
-            <!-- Avatar Type Toggle -->
-            <div class="fr-avatar-toggle">
-                <button class="fr-avatar-btn active" id="btnFemale" data-gender="female">
-                    <span class="avatar-icon material-symbols-outlined">female</span> Female
-                </button>
-                <button class="fr-avatar-btn" id="btnMale" data-gender="male">
-                    <span class="avatar-icon material-symbols-outlined">male</span> Male
-                </button>
-            </div>
 
             <!-- Skin Tone Selector -->
             <div class="fr-skin-tones" id="frSkinTones">
-                <span class="fr-skin-label">Skin Tone</span>
+                <span class="fr-skin-label">Mannequin Tone</span>
                 <div class="fr-skin-swatches">
                     <button class="fr-skin-swatch active" data-tone="fair" title="Fair"
                         style="background:#F0DFC0"></button>
@@ -195,17 +186,10 @@
 
         <!-- RIGHT PANEL: Summary + CTA -->
         <aside class="fr-summary" id="frSummary">
-            <h3 class="fr-summary-title">Your Look</h3>
+            <h3 class="fr-summary-title">Your Selection</h3>
 
             <div class="fr-summary-section">
-                <p class="fr-summary-label">Avatar</p>
-                <div class="fr-summary-value" id="summaryAvatar">
-                    <span class="fr-summary-icon material-symbols-outlined">female</span> Female
-                </div>
-            </div>
-
-            <div class="fr-summary-section">
-                <p class="fr-summary-label">Selected Ensemble</p>
+                <p class="fr-summary-label">Selected Piece</p>
                 <div class="fr-summary-slot" id="summaryDress">
                     <span class="fr-summary-empty">No jewellery selected</span>
                 </div>
@@ -334,6 +318,8 @@
 
     <!-- THREE.JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
     <!-- Modular JS -->
     <script src="fitting-room-avatar.js"></script>
     <script src="fitting-room-ui.js"></script>

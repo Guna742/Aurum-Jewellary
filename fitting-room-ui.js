@@ -217,10 +217,9 @@ function openModal() {
 
     // Build modal summary
     const summaryEl = document.getElementById('frModalSummary');
-    const gender = document.getElementById('summaryAvatar')?.textContent.trim() || 'Female';
-    let html = `<p><strong>Avatar:</strong> ${gender}</p>`;
+    let html = '';
     let total = 0;
-    const slotNames = { dress: '👗 Ensemble', necklace: '💫 Necklace', earrings: '💎 Earrings', bangles: '🔆 Bangles' };
+    const slotNames = { dress: '✦ Jewellery Piece', necklace: '💫 Necklace', earrings: '💎 Earrings', bangles: '🔆 Bangles' };
     Object.entries(selection).forEach(([slot, item]) => {
         if (!item) return;
         html += `<p><strong>${slotNames[slot]}:</strong> ${item.label} <span style="color:var(--gold-light)">${item.price}</span></p>`;
@@ -243,7 +242,7 @@ function spawnConfetti() {
     const container = document.getElementById('frModalConfetti');
     if (!container) return;
     container.innerHTML = '';
-    const colors = ['#D4AF37', '#F9E27D', '#996515', '#FFFFFF', '#0B0B0B'];
+    const colors = ['#064E3B', '#D4AF37', '#F9E27D', '#10B981', '#FFFFFF', '#080808'];
     for (let i = 0; i < 30; i++) {
         const p = document.createElement('div');
         p.className = 'confetti-piece';

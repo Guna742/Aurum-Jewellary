@@ -1,8 +1,8 @@
 /* Body theme */
 .theme-page-fitting {
-    background: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.15), transparent 55%),
-        radial-gradient(circle at 80% 80%, rgba(184, 134, 11, 0.1), transparent 55%),
-        #050505;
+    background: radial-gradient(circle at 20% 20%, rgba(6, 78, 59, 0.2), transparent 55%),
+        radial-gradient(circle at 80% 80%, rgba(2, 44, 34, 0.15), transparent 55%),
+        #050805;
     background-attachment: fixed;
 }
 
@@ -48,8 +48,8 @@
 
 /* ---- LEFT PANEL: Selector ---- */
 .fr-selector {
-    background: rgba(10, 10, 10, 0.9);
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    background: rgba(10, 15, 12, 0.9);
+    border: 1px solid rgba(6, 78, 59, 0.3);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     display: flex;
@@ -82,9 +82,9 @@
 }
 
 .fr-tab.active {
-    color: var(--gold-light);
-    border-bottom-color: var(--gold-light);
-    background: rgba(212, 175, 55, 0.08);
+    color: var(--emerald-light);
+    border-bottom-color: var(--emerald-light);
+    background: rgba(6, 78, 59, 0.12);
 }
 
 .fr-items-panel {
@@ -147,9 +147,9 @@
 }
 
 .fr-item.selected {
-    border-color: var(--gold-light);
-    background: rgba(212, 175, 55, 0.15);
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.25), inset 0 0 20px rgba(212, 175, 55, 0.08);
+    border-color: var(--emerald-light);
+    background: rgba(6, 78, 59, 0.15);
+    box-shadow: 0 0 20px rgba(6, 78, 59, 0.25), inset 0 0 20px rgba(6, 78, 59, 0.08);
 }
 
 .fr-item.selected::after {
@@ -207,8 +207,8 @@
     position: relative;
     border-radius: 24px;
     overflow: hidden;
-    background: radial-gradient(ellipse at 50% 30%, rgba(212, 175, 55, 0.08) 0%, rgba(10, 10, 10, 0.06) 50%, #050505 100%);
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    background: radial-gradient(ellipse at 50% 30%, rgba(6, 78, 59, 0.12) 0%, rgba(8, 8, 8, 0.06) 50%, #050805 100%);
+    border: 1px solid rgba(6, 78, 59, 0.25);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -698,7 +698,7 @@
 /* ---- Skin Tone Selector ---- */
 .fr-skin-tones {
     position: absolute;
-    top: 68px;
+    top: 16px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
